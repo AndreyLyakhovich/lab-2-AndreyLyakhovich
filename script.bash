@@ -10,7 +10,7 @@ ip3=0
 ip4=0
 for oct in "${SPLITIP[@]}";
 do
-	if (( $oct <= 256 )); then
+	if (( $oct <= 255 )); then
 		i=$((i+1))
 		if [[ i -eq 1 ]]; then
 			ip1=$oct
